@@ -1,5 +1,7 @@
 # The `*.gmdf` file
 
+The glTF Metadata File for STK (Systems Tool Kit)
+
 ## Contributors
 
 * Greg Beatty, Analytical Graphics, Inc.
