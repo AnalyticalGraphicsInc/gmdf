@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "AGI_stk_metadata glTF extension, adapted for gmdf",
+    "type": "object",
+    "description": "Object that defines metadata for use with STK (Systems Tool Kit).",
+    "allOf": [ { "$ref": "glTFProperty.schema.json" } ],
+    "properties": {
+        "solarPanelGroups": {
+            "type": "array",
+            "description": "An array of solar panel groups.",
+            "items": {
+                "$ref": "gmdf.solarPanelGroup.schema.json"
+            },
+            "minItems": 1
+        },
+        "extensions": { },
+        "extras": { }
+    }
+}
