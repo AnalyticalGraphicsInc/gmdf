@@ -1,6 +1,6 @@
 # The `*.gmdf` file
 
-The glTF Metadata File for STK (Systems Tool Kit)
+The glTF Metadata File (GMDF) for Systems Tool Kit (STK)
 
 ## Contributors
 
@@ -18,7 +18,7 @@ Written against the glTF 2.0 spec, with the `AGI_articulations` and `AGI_stk_met
 
 ## Overview
 
-The `AGI_articulations` and `AGI_stk_metadata` glTF 2.0 vendor extensions supply a number of different kinds of metadata to help with analysis of physical objects represented by glTF models.  As an alternative to supplying this metadata as extensions within a glTF file, the same metadata can also be supplied in an external file with the `*.gmdf` file extension, with the same path and base filename as the associated `*.gltf` or `*.glb` file.  One purpose of this is to allow the model author to iterate on their model, re-exporting it from a DCC tool or content pipeline to produce new versions of the model without overwriting the existing metadata.  Optionally, once the model is finalized, the metadata can then be moved into the glTF's JSON structure as extensions, and the external file deleted.
+The `AGI_articulations` and `AGI_stk_metadata` glTF 2.0 vendor extensions supply a number of different kinds of metadata to help with analysis of physical objects represented by glTF models.  As an alternative to supplying this metadata as extensions within a glTF file, the same metadata can also be supplied in an external file with the `*.gmdf` file extension, with the same path and base filename as the associated `*.gltf` or `*.glb` file.  One purpose of this is to allow the model author to iterate on their model, re-exporting it from a 3D authoring package or content pipeline to produce new versions of the model without overwriting the existing metadata.  Optionally, once the model is finalized, the metadata can then be moved into the glTF's JSON structure as extensions, and the external file deleted.
 
 In the case where an external file and embedded metadata both exist for the same model, the embedded metadata are ignored and only the external file is used.  This allows an analyst to adjust or override metadata without needing to edit a glb file that may itself already contain metadata.
 
