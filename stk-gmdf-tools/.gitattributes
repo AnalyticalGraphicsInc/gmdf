@@ -1,0 +1,4 @@
+# Set default behavior to automatically normalize line endings.
+* text=auto
+# Workaround for https://github.com/npm/npm/issues/17161
+package*.json text eol=lf
