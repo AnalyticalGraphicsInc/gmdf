@@ -15,6 +15,16 @@
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        {
+            "type": "npm",
+            "script": "compile",
+            "problemMatcher": []
+        },
+        {
+            "type": "npm",
+            "script": "updateSchema",
+            "problemMatcher": []
         }
     ]
 }
