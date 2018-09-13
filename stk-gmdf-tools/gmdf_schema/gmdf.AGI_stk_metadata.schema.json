@@ -13,6 +13,14 @@
             },
             "minItems": 1
         },
+        "noObscurationNodes": {
+            "type": "array",
+            "description": "An array of node names of nodes that do not obscure any sensors' view in the STK Sensor Obscuration tool.",
+            "items": {
+                "type": "string"
+            },
+            "minItems": 1
+        },
         "extensions": { },
         "extras": { }
     }

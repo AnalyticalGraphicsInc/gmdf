@@ -11,8 +11,7 @@
             "items": {
                 "type": "string"
             },
-            "minItems": 1,
-            "gltf_detailedDescription": "An array of glTF node names of attach points.  An attach point is a position on the model, within the node hierarchy, where external objects, effects, or analysis may be attached.  It is attached to the origin of the named node, and if orientation is needed, it is derived from the node as well.  This field is only valid in a gmdf external file.  For embedded metadata, use node.AGI_metdata.isAttachPoint instead."
+            "minItems": 1
         },
         "articulations": {
             "type": "array",
@@ -20,8 +19,7 @@
             "items": {
                 "$ref": "gmdf.articulation.schema.json"
             },
-            "minItems": 1,
-            "gltf_detailedDescription": "An array of articulations.  An articulation indicates a named range of motion available to one or more nodes within the model."
+            "minItems": 1
         },
         "extensions": { },
         "extras": { }
