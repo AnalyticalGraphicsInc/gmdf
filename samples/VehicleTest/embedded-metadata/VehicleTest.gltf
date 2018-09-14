@@ -1,0 +1,314 @@
+{
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5121,
+            "count" : 144,
+            "max" : [
+                94
+            ],
+            "min" : [
+                0
+            ],
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 95,
+            "max" : [
+                1.625,
+                0.6062178611755371,
+                0.7000000476837158
+            ],
+            "min" : [
+                -1.625,
+                -0.6062178015708923,
+                -0.7000000476837158
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 95,
+            "max" : [
+                1.0,
+                1.0,
+                0.866025447845459
+            ],
+            "min" : [
+                -1.0,
+                -1.0,
+                -0.8660255074501038
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5121,
+            "count" : 60,
+            "max" : [
+                39
+            ],
+            "min" : [
+                0
+            ],
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 40,
+            "max" : [
+                1.5000003576278687,
+                1.0,
+                4.000000953674316
+            ],
+            "min" : [
+                -1.5000003576278687,
+                -1.0,
+                -4.000001430511475
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 40,
+            "max" : [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min" : [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "type" : "VEC3"
+        }
+    ],
+    "asset" : {
+        "generator" : "Khronos Blender glTF 2.0 exporter",
+        "version" : "2.0"
+    },
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 144,
+            "byteOffset" : 0,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1140,
+            "byteOffset" : 144,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1140,
+            "byteOffset" : 1284,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 60,
+            "byteOffset" : 2424,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 480,
+            "byteOffset" : 2484,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 480,
+            "byteOffset" : 2964,
+            "target" : 34962
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 3444,
+            "uri" : "VehicleTest.bin"
+        }
+    ],
+    "materials" : [
+        {
+            "name" : "Material",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.6400000190734865,
+                    0.6400000190734865,
+                    0.6400000190734865,
+                    1.0
+                ],
+                "metallicFactor" : 0.0
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "WheelMesh",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "NORMAL" : 2,
+                        "POSITION" : 1
+                    },
+                    "indices" : 0,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "VehicleBodyMesh",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "NORMAL" : 5,
+                        "POSITION" : 4
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "FrontWheels",
+            "translation" : [
+                0.0,
+                -1.0,
+                2.0
+            ],
+            "extensions": {
+                "AGI_articulations": {
+                    "articulationName": "Wheels"
+                }
+            }
+        },
+        {
+            "mesh" : 0,
+            "name" : "RearWheels",
+            "translation" : [
+                0.0,
+                -1.0,
+                -2.5
+            ],
+            "extensions": {
+                "AGI_articulations": {
+                    "articulationName": "Wheels"
+                }
+            }
+        },
+        {
+            "children" : [
+                0,
+                1
+            ],
+            "mesh" : 1,
+            "name" : "VehicleBody",
+            "translation" : [
+                0.0,
+                1.5,
+                -0.0
+            ],
+            "extensions": {
+                "AGI_articulations": {
+                    "articulationName": "Vehicle"
+                }
+            }
+        }
+    ],
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                2
+            ]
+        }
+    ],
+    "extensionsUsed": [
+        "AGI_articulations"
+    ],
+    "extensions": {
+        "AGI_articulations": {
+            "articulations": [
+                {
+                    "name": "Vehicle",
+                    "stages": [
+                        {
+                            "name": "MoveX",
+                            "type": "xTranslate",
+                            "minimumValue": -1000.0,
+                            "maximumValue": 1000.0,
+                            "initialValue": 0.0
+                        },
+                        {
+                            "name": "MoveY",
+                            "type": "yTranslate",
+                            "minimumValue": -1000.0,
+                            "maximumValue": 1000.0,
+                            "initialValue": 0.0
+                        },
+                        {
+                            "name": "MoveZ",
+                            "type": "zTranslate",
+                            "minimumValue": -1000.0,
+                            "maximumValue": 1000.0,
+                            "initialValue": 0.0
+                        },
+                        {
+                            "name": "Yaw",
+                            "type": "yRotate",
+                            "minimumValue": -360.0,
+                            "maximumValue": 360.0,
+                            "initialValue": 0.0
+                        },
+                        {
+                            "name": "Pitch",
+                            "type": "xRotate",
+                            "minimumValue": -360.0,
+                            "maximumValue": 360.0,
+                            "initialValue": 0.0
+                        },
+                        {
+                            "name": "Roll",
+                            "type": "zRotate",
+                            "minimumValue": -360.0,
+                            "maximumValue": 360.0,
+                            "initialValue": 0.0
+                        },
+                        {
+                            "name": "Size",
+                            "type": "uniformScale",
+                            "minimumValue": 0.0,
+                            "maximumValue": 1.0,
+                            "initialValue": 1.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Wheels",
+                    "stages": [
+                        {
+                            "name": "Drive",
+                            "type": "xRotate",
+                            "minimumValue": -360,
+                            "maximumValue": 360,
+                            "initialValue": 0
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

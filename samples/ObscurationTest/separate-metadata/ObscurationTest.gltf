@@ -1,0 +1,184 @@
+{
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5121,
+            "count" : 36,
+            "max" : [
+                23
+            ],
+            "min" : [
+                0
+            ],
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 24,
+            "max" : [
+                5.000002384185791,
+                20.0,
+                5.000002861022949
+            ],
+            "min" : [
+                -5.000001907348633,
+                -20.0,
+                -5.000001907348633
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 24,
+            "max" : [
+                0.9999999403953552,
+                1.0,
+                1.0
+            ],
+            "min" : [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "type" : "VEC3"
+        }
+    ],
+    "asset" : {
+        "generator" : "Khronos Blender glTF 2.0 exporter",
+        "version" : "2.0"
+    },
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 36,
+            "byteOffset" : 0,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 288,
+            "byteOffset" : 36,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 288,
+            "byteOffset" : 324,
+            "target" : 34962
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 612,
+            "uri" : "ObscurationTest.bin"
+        }
+    ],
+    "materials" : [
+        {
+            "name" : "Material",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.16685718546594952,
+                    0.09891494063906281,
+                    0.640000066757203,
+                    1.0
+                ],
+                "metallicFactor" : 0.0
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "BigBoxMesh",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "NORMAL" : 2,
+                        "POSITION" : 1
+                    },
+                    "indices" : 0,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Base",
+            "translation" : [
+                0.0,
+                20.0,
+                -0.0
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Crossbar",
+            "rotation" : [
+                0.0,
+                0.0,
+                -0.7071068286895752,
+                0.7071068286895752
+            ],
+            "translation" : [
+                0.0,
+                45.0,
+                -0.0
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Diagonal",
+            "rotation" : [
+                0.0,
+                0.0,
+                -0.3826834559440613,
+                0.9238795638084412
+            ],
+            "scale" : [
+                0.9999999403953552,
+                0.9999999403953552,
+                1.0
+            ],
+            "translation" : [
+                0.0,
+                70.0,
+                -0.0
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "LeftSide",
+            "translation" : [
+                -25.0,
+                60.0,
+                -0.0
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "RightSide",
+            "translation" : [
+                25.0,
+                60.0,
+                -0.0
+            ]
+        }
+    ],
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                2,
+                4,
+                3,
+                1,
+                0
+            ]
+        }
+    ]
+}
