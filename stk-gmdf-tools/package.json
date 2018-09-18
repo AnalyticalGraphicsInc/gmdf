@@ -4,6 +4,10 @@
     "description": "Tools for editing GMDF files.",
     "version": "0.0.1",
     "publisher": "cesium",
+    "license": "Apache-2.0",
+    "repository": {
+        "url": "https://github.com/AnalyticalGraphicsInc/gmdf"
+    },
     "engines": {
         "vscode": "^1.23.0"
     },
@@ -13,14 +17,19 @@
     ],
     "activationEvents": [
         "onLanguage:json",
-        "onCommand:extension.sayHello"
+        "onCommand:gmdf.extractFromGltf",
+        "onCommand:gmdf.injectIntoGltf"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.sayHello",
-                "title": "Hello World"
+                "command": "gmdf.extractFromGltf",
+                "title": "Extract GMDF from glTF"
+            },
+            {
+                "command": "gmdf.injectIntoGltf",
+                "title": "Inject GMDF into glTF"
             }
         ],
         "languages": [
