@@ -1,28 +1,8 @@
 {
-    "AGI_stk_metadata": {
-        "solarPanelGroups": [
-            {
-                "name": "MainPanel",
-                "efficiency": 25,
-                "modelNodes": [
-                    "SolarPanel_A",
-                    "SolarPanel_B",
-                    "SolarPanel_C",
-                    "SolarPanel_D"
-                ]
-            }
-        ]
-    },
     "AGI_articulations": {
-        "attachPoints": [
-            "BaseCube"
-        ],
         "articulations": [
             {
                 "name": "Panels",
-                "modelNodes": [
-                    "PanelBacks"
-                ],
                 "stages": [
                     {
                         "name": "Rotate",
@@ -33,7 +13,29 @@
                     }
                 ],
                 "pointingVector": [
-                    0, 1, 0
+                    0,
+                    1,
+                    0
+                ],
+                "modelNodes": [
+                    "PanelBacks"
+                ]
+            }
+        ],
+        "attachPoints": [
+            "BaseCube"
+        ]
+    },
+    "AGI_stk_metadata": {
+        "solarPanelGroups": [
+            {
+                "name": "MainPanel",
+                "efficiency": 25,
+                "modelNodes": [
+                    "SolarPanel_A",
+                    "SolarPanel_B",
+                    "SolarPanel_C",
+                    "SolarPanel_D"
                 ]
             }
         ]
