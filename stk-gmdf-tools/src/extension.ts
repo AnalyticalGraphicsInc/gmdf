@@ -128,7 +128,7 @@ async function saveGmdf(gmdf: any): Promise<void> {
     if (uri !== undefined) {
         try {
             const tabSize = activeTextEditor.options.tabSize as number;
-            const space = activeTextEditor.options.insertSpaces ? (new Array(tabSize + 1).join(' ')) : '\t'
+            const space = activeTextEditor.options.insertSpaces ? (new Array(tabSize + 1).join(' ')) : '\t';
             let newJson = JSON.stringify(gmdf, null, space) + '\n';
 
             fs.writeFileSync(uri.fsPath, newJson);
@@ -352,13 +352,13 @@ async function injectIntoGltf(textEditor: vscode.TextEditor, textEditorEdit: vsc
     }
 
     const tabSize = textEditor.options.tabSize as number;
-    const space = textEditor.options.insertSpaces ? (new Array(tabSize + 1).join(' ')) : '\t'
+    const space = textEditor.options.insertSpaces ? (new Array(tabSize + 1).join(' ')) : '\t';
     let newJson = JSON.stringify(glTF, null, space) + '\n';
 
     const fullRange = new vscode.Range(
         textEditor.document.positionAt(0),
         textEditor.document.positionAt(oldText.length - 1)
-    )
+    );
 
     await textEditor.edit(editBuilder => {
         editBuilder.replace(fullRange, newJson);
