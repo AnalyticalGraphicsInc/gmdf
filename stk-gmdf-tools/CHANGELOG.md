@@ -1,6 +1,6 @@
 # Change Log
 
-### 1.0.0 - UNRELEASED
+### 1.0.0 - 2018-09-20
 
 - Initial release
 - GMDF schema validation
