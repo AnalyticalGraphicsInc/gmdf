@@ -2,8 +2,8 @@
     "name": "stk-gmdf-tools",
     "displayName": "STK GMDF Tools",
     "description": "Tools for editing GMDF files.",
-    "version": "0.0.1",
-    "publisher": "cesium",
+    "version": "1.0.0",
+    "publisher": "agi",
     "license": "Apache-2.0",
     "repository": {
         "url": "https://github.com/AnalyticalGraphicsInc/gmdf"
