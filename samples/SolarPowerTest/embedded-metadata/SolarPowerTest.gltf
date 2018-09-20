@@ -1,0 +1,396 @@
+{
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5121,
+            "count" : 120,
+            "max" : [
+                79
+            ],
+            "min" : [
+                0
+            ],
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 80,
+            "max" : [
+                3.000000476837158,
+                0.10000002384185791,
+                0.5000004768371582
+            ],
+            "min" : [
+                -3.000000476837158,
+                -0.10000002384185791,
+                -0.5000002384185791
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 80,
+            "max" : [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min" : [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5121,
+            "count" : 36,
+            "max" : [
+                23
+            ],
+            "min" : [
+                0
+            ],
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 24,
+            "max" : [
+                0.5000001788139343,
+                0.5,
+                0.5000003576278687
+            ],
+            "min" : [
+                -0.5000002384185791,
+                -0.5,
+                -0.5000001192092896
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 24,
+            "max" : [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min" : [
+                -1.0,
+                -1.0,
+                -1.0
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5121,
+            "count" : 6,
+            "max" : [
+                3
+            ],
+            "min" : [
+                0
+            ],
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5126,
+            "count" : 4,
+            "max" : [
+                0.5,
+                0.0,
+                0.5000001192092896
+            ],
+            "min" : [
+                -0.5000005960464478,
+                0.0,
+                -0.5000001192092896
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 8,
+            "componentType" : 5126,
+            "count" : 4,
+            "max" : [
+                -0.0,
+                1.0,
+                -0.0
+            ],
+            "min" : [
+                -0.0,
+                1.0,
+                -0.0
+            ],
+            "type" : "VEC3"
+        }
+    ],
+    "asset" : {
+        "generator" : "Khronos Blender glTF 2.0 exporter",
+        "version" : "2.0"
+    },
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 120,
+            "byteOffset" : 0,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 960,
+            "byteOffset" : 120,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 960,
+            "byteOffset" : 1080,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 36,
+            "byteOffset" : 2040,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 288,
+            "byteOffset" : 2076,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 288,
+            "byteOffset" : 2364,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 6,
+            "byteOffset" : 2652,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 48,
+            "byteOffset" : 2660,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 48,
+            "byteOffset" : 2708,
+            "target" : 34962
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 2756,
+            "uri" : "SolarPowerTest.bin"
+        }
+    ],
+    "materials" : [
+        {
+            "name" : "Material",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.6400000190734865,
+                    0.6400000190734865,
+                    0.6400000190734865,
+                    1.0
+                ],
+                "metallicFactor" : 0.0
+            }
+        },
+        {
+            "name" : "SalarMat",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.027251637388045147,
+                    0.031642756337564526,
+                    0.640000066757203,
+                    1.0
+                ],
+                "metallicFactor" : 0.0
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "PanelBacksMesh",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "NORMAL" : 2,
+                        "POSITION" : 1
+                    },
+                    "indices" : 0,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "BaseCubeMesh",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "NORMAL" : 5,
+                        "POSITION" : 4
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "SolarPanelsMesh",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "NORMAL" : 8,
+                        "POSITION" : 7
+                    },
+                    "indices" : 6,
+                    "material" : 1
+                }
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "children" : [
+                1
+            ],
+            "mesh" : 1,
+            "name" : "BaseCube",
+            "extensions": {
+                "AGI_articulations": {
+                    "isAttachPoint": true
+                }
+            }
+        },
+        {
+            "children" : [
+                2,
+                3,
+                4,
+                5
+            ],
+            "mesh" : 0,
+            "name" : "PanelBacks",
+            "extensions": {
+                "AGI_articulations": {
+                    "articulationName": "Panels"
+                }
+            }
+        },
+        {
+            "mesh" : 2,
+            "name" : "SolarPanel_A",
+            "translation" : [
+                2.5,
+                0.10000002384185791,
+                -1.4901161193847656e-07
+            ],
+            "extensions": {
+                "AGI_stk_metadata": {
+                    "solarPanelGroupName": "MainPanel"
+                }
+            }
+        },
+        {
+            "mesh" : 2,
+            "name" : "SolarPanel_B",
+            "translation" : [
+                1.5,
+                0.10000002384185791,
+                -1.4901161193847656e-07
+            ],
+            "extensions": {
+                "AGI_stk_metadata": {
+                    "solarPanelGroupName": "MainPanel"
+                }
+            }
+        },
+        {
+            "mesh" : 2,
+            "name" : "SolarPanel_C",
+            "translation" : [
+                -1.5,
+                0.10000002384185791,
+                -1.4901161193847656e-07
+            ],
+            "extensions": {
+                "AGI_stk_metadata": {
+                    "solarPanelGroupName": "MainPanel"
+                }
+            }
+        },
+        {
+            "mesh" : 2,
+            "name" : "SolarPanel_D",
+            "translation" : [
+                -2.5,
+                0.10000002384185791,
+                -1.4901161193847656e-07
+            ],
+            "extensions": {
+                "AGI_stk_metadata": {
+                    "solarPanelGroupName": "MainPanel"
+                }
+            }
+        }
+    ],
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "extensionsUsed": [
+        "AGI_articulations",
+        "AGI_stk_metadata"
+    ],
+    "extensions": {
+        "AGI_stk_metadata": {
+            "solarPanelGroups": [
+                {
+                    "name": "MainPanel",
+                    "efficiency": 25
+                }
+            ]
+        },
+        "AGI_articulations": {
+            "articulations": [
+                {
+                    "name": "Panels",
+                    "stages": [
+                        {
+                            "name": "Rotate",
+                            "type": "xRotate",
+                            "initialValue": 0,
+                            "minimumValue": -360,
+                            "maximumValue": 360
+                        }
+                    ],
+                    "pointingVector": [
+                        0, 1, 0
+                    ]
+                }
+            ]
+        }
+    }
+}

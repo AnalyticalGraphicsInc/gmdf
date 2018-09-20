@@ -1,0 +1,43 @@
+{
+    "AGI_articulations": {
+        "articulations": [
+            {
+                "name": "Panels",
+                "stages": [
+                    {
+                        "name": "Rotate",
+                        "type": "xRotate",
+                        "initialValue": 0,
+                        "minimumValue": -360,
+                        "maximumValue": 360
+                    }
+                ],
+                "pointingVector": [
+                    0,
+                    1,
+                    0
+                ],
+                "modelNodes": [
+                    "PanelBacks"
+                ]
+            }
+        ],
+        "attachPoints": [
+            "BaseCube"
+        ]
+    },
+    "AGI_stk_metadata": {
+        "solarPanelGroups": [
+            {
+                "name": "MainPanel",
+                "efficiency": 25,
+                "modelNodes": [
+                    "SolarPanel_A",
+                    "SolarPanel_B",
+                    "SolarPanel_C",
+                    "SolarPanel_D"
+                ]
+            }
+        ]
+    }
+}
