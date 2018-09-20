@@ -1,65 +1,41 @@
-# stk-gmdf-tools README
+# GMDF Extension for Visual Studio Code
 
-This is the README for your extension "stk-gmdf-tools". After writing up a brief description, we recommend including the following sections.
+[![GitHub issues](https://img.shields.io/github/issues/AnalyticalGraphicsInc/gmdf.svg)](https://github.com/AnalyticalGraphicsInc/gmdf/issues) [![GitHub license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/AnalyticalGraphicsInc/gltf-vscode/blob/master/stk-gmdf-tools/LICENSE.md)
+
+The glTF Metadata File (GMDF) for Systems Tool Kit (STK) provides a means of conveying metadata about a glTF file, outside of that file.  This is done so that 3D models can be re-exported and overwritten by the content creation tools that are used to author them, without overwriting the metadata.
+
+See the [GMDF repository on GitHub](https://github.com/AnalyticalGraphicsInc/gmdf) for more information.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+This VSCode extension provides:
 
-For example if there is an image subfolder under your extension project workspace:
+### JSON schema validation of `*.gmdf` files.
 
-\!\[feature X\]\(images/feature-x.png\)
+This offers hover tooltips for property descriptions, auto-complete (<kbd>CTRL</kbd> + <kbd>space</kbd>) for suggested property names, and validation of required fields.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+### Editor command `Inject GMDF into glTF`
 
-## Requirements
+With a glTF file open for edit, run this command with <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>P</kbd> and typing the first part of the name of the command, `Inject GMDF into glTF`.  It will look for a `*.gmdf` file in the same folder as the glTF file, read its contents, and insert them into the glTF file using glTF extension(s).  Note this will re-format the JSON of your glTF file in the process.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+The result is left in the editor, but not saved to disk unless you save it.  You can also use the text editor's undo function to undo this action.
 
-## Extension Settings
+### Editor command `Extract GMDF from glTF`
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+With a glTF file open for edit, run this command with <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>P</kbd> and typing the first part of name of this command, `Extract GMDF from glTF`.  It will pop open a "Save File" dialog to ask to save the new GMDF file.  The result is written to disk, and then opened for edit.
 
-For example:
+## Sample models
 
-This extension contributes the following settings:
+There are some [sample models](https://github.com/AnalyticalGraphicsInc/gmdf/blob/master/samples/) available that use gmdf, alongside ones that use the corresponding glTF extensions.
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+## Source code
 
-## Known Issues
+on [GitHub](https://github.com/AnalyticalGraphicsInc/gmdf/blob/master/stk-gmdf-tools/).  See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+## License
+
+Apache 2.0, see [LICENSE.md](LICENSE.md).
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+See [CHANGELOG.md](CHANGELOG.md).
