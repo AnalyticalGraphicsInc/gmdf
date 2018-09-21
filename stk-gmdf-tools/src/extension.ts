@@ -141,7 +141,7 @@ async function saveGmdf(gmdf: any): Promise<void> {
     }
 }
 
-function removeEmbeddedData(glTF: any): void {
+export function removeEmbeddedData(glTF: any): void {
     // Destroy old embedded node metadata.
     if (glTF.nodes) {
         for (let node of glTF.nodes) {
