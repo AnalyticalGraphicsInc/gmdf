@@ -16,13 +16,13 @@ This offers hover tooltips for property descriptions, auto-complete (<kbd>CTRL</
 
 ### Editor command `Inject GMDF into glTF`
 
-With a glTF file open for edit, run this command with <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>P</kbd> and typing the first part of the name of the command, `Inject GMDF into glTF`.  It will look for a `*.gmdf` file in the same folder as the glTF file, read its contents, and insert them into the glTF file using glTF extension(s).  Note this will re-format the JSON of your glTF file in the process.
+With a glTF file open for edit, run this command by pressing <kbd>F1</kbd> and typing the first part of the name of the command, `Inject GMDF into glTF`.  It will look for a `*.gmdf` file in the same folder as the glTF file, read its contents, and insert them into the glTF file using glTF extension(s).  Note this will re-format the JSON of your glTF file in the process.
 
 The result is left in the editor, but not saved to disk unless you save it.  You can also use the text editor's undo function to undo this action.
 
 ### Editor command `Extract GMDF from glTF`
 
-With a glTF file open for edit, run this command with <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>P</kbd> and typing the first part of name of this command, `Extract GMDF from glTF`.  It will pop open a "Save File" dialog to ask to save the new GMDF file.  The result is written to disk, and then opened for edit.
+With a glTF file open for edit, run this command by pressing <kbd>F1</kbd> and typing the first part of name of this command, `Extract GMDF from glTF`.  It will pop open a "Save File" dialog to ask to save the new GMDF file.  The result is written to disk, and then opened for edit.
 
 ## Sample models
 
