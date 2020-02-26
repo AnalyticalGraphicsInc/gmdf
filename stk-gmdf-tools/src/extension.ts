@@ -356,8 +356,8 @@ async function injectIntoGltf(textEditor: vscode.TextEditor, textEditorEdit: vsc
     let newJson = JSON.stringify(glTF, null, space) + '\n';
 
     const fullRange = new vscode.Range(
-        textEditor.document.positionAt(0),
-        textEditor.document.positionAt(oldText.length - 1)
+        textEditor.document.lineAt(0).range.start,
+        textEditor.document.lineAt(textEditor.document.lineCount - 1).range.end
     );
 
     await textEditor.edit(editBuilder => {

@@ -10,7 +10,7 @@ The glTF Metadata File (GMDF) for Systems Tool Kit (STK)
 
 ## Status
 
-Draft
+Complete
 
 ## Dependencies
 
