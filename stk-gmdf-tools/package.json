@@ -2,7 +2,7 @@
     "name": "stk-gmdf-tools",
     "displayName": "STK GMDF Tools",
     "description": "Tools for editing GMDF files.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "agi",
     "license": "Apache-2.0",
     "repository": {
